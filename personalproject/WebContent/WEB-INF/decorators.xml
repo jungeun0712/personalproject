@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!-- /WEB-INF/decorators.xml -->
+<decorators defaultdir="/decorator">
+	<decorator name="main" page="decorator.jsp">
+		<pattern>/model2/member/*</pattern>
+		<pattern>/model2/board/*</pattern>
+	</decorator>
+	<excludes> <!-- sitemesh에서 layout 제외하기 -->
+		<pattern>/model2/member/loginForm*</pattern>
+		<pattern>/model2/member/joinForm*</pattern>
+		<pattern>/model2/member/idForm*</pattern>
+		<pattern>/model2/member/id*</pattern>
+		<pattern>/model2/member/pwForm*</pattern>
+		<pattern>/model2/member/pw*</pattern>
+		<pattern>/model2/member/password*</pattern>
+		<pattern>/model2/board/upload*</pattern>
+		<pattern>/model2/board/infoCal*</pattern>
+	</excludes>
+</decorators>
